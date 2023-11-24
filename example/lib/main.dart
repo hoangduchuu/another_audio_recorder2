@@ -245,6 +245,7 @@ class RecorderExampleState extends State<RecorderExample> {
 
   void onPlayAudio() async {
     AudioPlayer audioPlayer = AudioPlayer();
-    await audioPlayer.play(_current!.path!, isLocal: true);
+    Source source = DeviceFileSource(_current!.path!);
+    await audioPlayer.play(source);
   }
 }

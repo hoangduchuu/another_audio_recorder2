@@ -2,13 +2,23 @@ group 'com.loonix.another_audio_recorder'
 version '0.5.4'
 
 buildscript {
+    ext.kotlin_version = '1.8.22'
+    ext {
+       compileSdkVersion   = 33                // or higher
+       targetSdkVersion    = 33                // or higher
+       appCompatVersion    = "1.1.0"           // or higher
+       ndkVersion          = "24.0.8215888"    // or higher
+   }
     repositories {
         google()
         jcenter()
     }
 
+
     dependencies {
-        classpath 'com.android.tools.build:gradle:3.2.1'
+        classpath "com.android.tools.build:gradle:7.1.2"
+        classpath "org.jetbrains.kotlin:kotlin-gradle-plugin:$kotlin_version"
+
     }
 }
 
@@ -22,7 +32,7 @@ rootProject.allprojects {
 apply plugin: 'com.android.library'
 
 android {
-    compileSdkVersion 28
+    compileSdkVersion 33
 
     defaultConfig {
         minSdkVersion 16
