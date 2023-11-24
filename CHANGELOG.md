@@ -1,3 +1,13 @@
+## 1.1.0
+## What's Changed
+* Fix related to Android 13 (API level 33) permissions by @mselmanyildirim in https://github.com/loonix/another_audio_recorder/pull/4
+* fix: example to support flutter v2/3 changes by @loonix in https://github.com/loonix/another_audio_recorder/pull/8
+
+## New Contributors
+* @mselmanyildirim made their first contribution in https://github.com/loonix/another_audio_recorder/pull/4
+
+**Full Changelog**: https://github.com/loonix/another_audio_recorder/compare/1.0.1...1.1.0
+
 ## 1.0.1
 * Added null check to recording, thanks @electrooz
 ## 1.0.0+1
